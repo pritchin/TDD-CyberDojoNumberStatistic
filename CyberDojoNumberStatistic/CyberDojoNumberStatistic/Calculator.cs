@@ -27,6 +27,11 @@ namespace CyberDojoNumberStatistic
 
 		public double Max(int[] sequence)
 		{
+			if (sequence == null)
+			{
+				throw new ArgumentNullException(nameof(sequence));
+			}
+			
 			var max = int.MinValue;
 			
 			foreach (var item in sequence)

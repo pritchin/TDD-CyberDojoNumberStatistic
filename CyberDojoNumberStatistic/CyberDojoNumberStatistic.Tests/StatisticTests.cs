@@ -71,5 +71,12 @@ namespace CyberDojoNumberStatistic.Tests
 			
 			Assert.AreEqual(200, result);
 		}
+
+		[Test]
+		public void METHOD()
+		{
+			var calculator = new Calculator();
+			Assert.Throws<ArgumentNullException>(() => calculator.Max(null));
+		}
 	}
 }
