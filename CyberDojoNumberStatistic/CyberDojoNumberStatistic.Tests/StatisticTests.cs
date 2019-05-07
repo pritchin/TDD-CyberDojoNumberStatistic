@@ -48,5 +48,16 @@ namespace CyberDojoNumberStatistic.Tests
 			
 			Assert.AreEqual(6, result);
 		}
+
+		[Test]
+		public void WhenSequence_5_6_7_Return_7()
+		{
+			var calculator = new Calculator();
+			var sequence = new[] {5, 6, 7};
+
+			var result = calculator.Max(sequence);
+			
+			Assert.AreEqual(7, result);
+		}
 	}
 }
