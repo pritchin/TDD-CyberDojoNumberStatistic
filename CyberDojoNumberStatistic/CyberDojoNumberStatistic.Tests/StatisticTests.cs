@@ -14,5 +14,15 @@ namespace CyberDojoNumberStatistic.Tests
 			
 			Assert.AreEqual(5, result);
 		}
+
+		[Test]
+		public void METHOD()
+		{
+			var sequence = new[] {6,7,8};
+			var calculator = new Calculator();
+			var result = calculator.Min(sequence);
+			
+			Assert.AreEqual(6, result);
+		}
 	}
 }

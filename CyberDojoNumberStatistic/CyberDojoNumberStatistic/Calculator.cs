@@ -4,7 +4,17 @@ namespace CyberDojoNumberStatistic
 	{
 		public double Min(int[] sequence)
 		{
-			return 5;
+			var min = int.MaxValue;
+			
+			foreach (var item in sequence)
+			{
+				if (item < min)
+				{
+					min = item;
+				}
+			}
+			
+			return min;
 		}
 	}
 }
