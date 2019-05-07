@@ -1,6 +1,6 @@
 using NUnit.Framework;
 
-namespace CyberDojoNumberStatistic
+namespace CyberDojoNumberStatistic.Tests
 {
 	public class StatisticTests
 	{
