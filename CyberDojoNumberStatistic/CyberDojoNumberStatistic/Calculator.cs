@@ -27,17 +27,17 @@ namespace CyberDojoNumberStatistic
 
 		public double Max(int[] sequence)
 		{
-			if (sequence.Contains(200))
+			var max = int.MinValue;
+			
+			foreach (var item in sequence)
 			{
-				return 200;
+				if (item > max)
+				{
+					max = item;
+				}
 			}
 			
-			if (sequence.Contains(7))
-			{
-				return 7;
-			}
-			
-			return 6;
+			return max;
 		}
 	}
 }
