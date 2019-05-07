@@ -6,7 +6,7 @@ namespace CyberDojoNumberStatistic.Tests
 	public class StatisticTests
 	{
 		[Test]
-		public void METHOD()
+		public void WhenSequenceNull_ThrowsArgumentNullException()
 		{
 			var calculator = new Calculator();
 			
