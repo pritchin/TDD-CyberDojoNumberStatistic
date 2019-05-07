@@ -36,5 +36,15 @@ namespace CyberDojoNumberStatistic.Tests
 			
 			Assert.AreEqual(6, result);
 		}
+
+		[Test]
+		public void METHOD()
+		{
+			var calculator = new Calculator();
+			var sequence = new[] {5, 6};
+
+			double result = calculator.Max(sequence);
+			Assert.AreEqual(6, result);
+		}
 	}
 }

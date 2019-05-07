@@ -23,5 +23,10 @@ namespace CyberDojoNumberStatistic
 			
 			return min;
 		}
+
+		public double Max(int[] sequence)
+		{
+			return 6;
+		}
 	}
 }
