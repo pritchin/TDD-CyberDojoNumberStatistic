@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using NUnit.Framework;
 
 namespace CyberDojoNumberStatistic.Tests
@@ -58,6 +59,17 @@ namespace CyberDojoNumberStatistic.Tests
 			var result = calculator.Max(sequence);
 			
 			Assert.AreEqual(7, result);
+		}
+
+		[Test]
+		public void WhenSequence_1_range_200_Return_200()
+		{
+			var calculator = new Calculator();
+			var sequence = Enumerable.Range(1,200).ToArray();
+
+			var result = calculator.Max(sequence);
+			
+			Assert.AreEqual(200, result);
 		}
 	}
 }
