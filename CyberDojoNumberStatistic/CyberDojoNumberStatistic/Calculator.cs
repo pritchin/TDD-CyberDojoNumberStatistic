@@ -1,20 +1,31 @@
 using System;
-using System.Linq;
 
 namespace CyberDojoNumberStatistic
 {
 	public class Calculator
 	{
-		public int Min(int[] sequence)
+		private readonly int[] _sequence;
+
+		public Calculator(int[] sequence)
 		{
 			if (sequence == null)
 			{
 				throw new ArgumentNullException(nameof(sequence));
 			}
+			
+			this._sequence = sequence;
+		}
+		
+		public int Min()
+		{
+			if (_sequence == null)
+			{
+				throw new ArgumentNullException(nameof(_sequence));
+			}
 
 			var min = int.MaxValue;
 			
-			foreach (var item in sequence)
+			foreach (var item in _sequence)
 			{
 				if (item < min)
 				{
@@ -25,16 +36,16 @@ namespace CyberDojoNumberStatistic
 			return min;
 		}
 
-		public double Max(int[] sequence)
+		public double Max()
 		{
-			if (sequence == null)
+			if (_sequence == null)
 			{
-				throw new ArgumentNullException(nameof(sequence));
+				throw new ArgumentNullException(nameof(_sequence));
 			}
 			
 			var max = int.MinValue;
 			
-			foreach (var item in sequence)
+			foreach (var item in _sequence)
 			{
 				if (item > max)
 				{
