@@ -32,18 +32,20 @@ namespace CyberDojoNumberStatistic.Tests
 		{
 			var sequence = new[] {6,7,8};
 			var calculator = new Calculator();
+			
 			var result = calculator.Min(sequence);
 			
 			Assert.AreEqual(6, result);
 		}
 
 		[Test]
-		public void METHOD()
+		public void WhenSequence_5_6_Return_6()
 		{
 			var calculator = new Calculator();
 			var sequence = new[] {5, 6};
 
-			double result = calculator.Max(sequence);
+			var result = calculator.Max(sequence);
+			
 			Assert.AreEqual(6, result);
 		}
 	}
