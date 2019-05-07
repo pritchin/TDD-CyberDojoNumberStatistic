@@ -1,9 +1,16 @@
+using System;
+
 namespace CyberDojoNumberStatistic
 {
 	public class Calculator
 	{
-		public double Min(int[] sequence)
+		public int Min(int[] sequence)
 		{
+			if (sequence == null)
+			{
+				throw new ArgumentNullException(nameof(sequence));
+			}
+
 			var min = int.MaxValue;
 			
 			foreach (var item in sequence)

@@ -1,9 +1,21 @@
+using System;
 using NUnit.Framework;
 
 namespace CyberDojoNumberStatistic.Tests
 {
 	public class StatisticTests
 	{
+		[Test]
+		public void METHOD()
+		{
+			var calculator = new Calculator();
+			
+			Assert.Throws<ArgumentNullException>(() =>
+			{
+				calculator.Min(null);
+			});
+		}
+		
 		[Test]
 		public void WhenSequence_5_6_Return_5()
 		{
