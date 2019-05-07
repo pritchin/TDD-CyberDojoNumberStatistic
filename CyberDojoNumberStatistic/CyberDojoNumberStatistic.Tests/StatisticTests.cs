@@ -5,7 +5,7 @@ namespace CyberDojoNumberStatistic.Tests
 	public class StatisticTests
 	{
 		[Test]
-		public void MinTest()
+		public void WhenSequence_5_6_Return_5()
 		{
 			var sequence = new[] {5, 6};
 			var calculator = new Calculator();
@@ -16,7 +16,7 @@ namespace CyberDojoNumberStatistic.Tests
 		}
 
 		[Test]
-		public void METHOD()
+		public void WhenSequence_6_7_8_Return_6()
 		{
 			var sequence = new[] {6,7,8};
 			var calculator = new Calculator();
